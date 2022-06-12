@@ -80,7 +80,7 @@ header .contenedor {
     height: 100vh;
     background-color: grey 0.9;
     transition: all 0.5s;
-    
+
 }
 
 .menu a {
@@ -262,6 +262,8 @@ header .contenedor {
     color: #fff;
     height: auto;
     padding-bottom: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 #about-us p{
@@ -302,6 +304,12 @@ header .contenedor {
 .img-mission{
     grid-column: 1/7;
     grid-row: 1/-1;
+    transition: transform .8s;
+}
+
+.img-mission:hover {
+    transform: scale(1.01);
+    
 }
 
 /*footer*/
