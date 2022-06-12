@@ -258,7 +258,7 @@ header .contenedor {
 
 /*about us*/
 #about-us{
-    background: #000;
+    background: linear-gradient(to right, #434343 0%, black 100%);;
     color: #fff;
     height: auto;
     padding-bottom: 60px;
