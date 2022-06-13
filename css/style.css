@@ -262,8 +262,8 @@ header .contenedor {
     color: #fff;
     height: auto;
     padding-bottom: 60px;
-    margin-left: 150px;
-    margin-right: 150px;
+    /*margin-left: 150px;
+    margin-right: 150px;*/
 }
 
 #about-us p{
@@ -308,7 +308,7 @@ header .contenedor {
 }
 
 .img-mission:hover {
-    transform: scale(1.01);
+    transform: scale(1.07);
     
 }
 

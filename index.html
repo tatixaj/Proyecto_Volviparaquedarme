@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volvi para quedarme- viajes y lifestyle</title>
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="shortcut icon" href="img/favicon.jpg">
@@ -32,7 +36,7 @@
     <br>
     <main>
          <section id="hero-home">
-                <h1>Volví para quedarme <br> Travel and Lifestyle</h1>
+                <h1 class="animate__animated animate__fadeInDownBig">Volví para quedarme <br> Travel and Lifestyle</h1>
                 <form action="pages/acercademi.html">
                     <button>Querés conocer más sobre mi?!</button>
                 </form>
@@ -45,9 +49,9 @@
     
             <Section id="vida-millenial">
                 <div class="container-home">
-                    <div class="img-containerhome"></div>
+                    <div class="img-containerhome" data-aos="zoom-in"></div>
                     <div class="texto-vida">
-                        <h2>Remember, <span class="color-acento"> Happiness Is A Way Of Travel</span>, Not A Destination.</h2>
+                        <h2 data-aos="fade-down-left">Remember, <span class="color-acento"> Happiness Is A Way Of Travel</span>, Not A Destination.</h2>
                         <p class="texto-home">Si estas buscando inspiracion viajera, guias de viaje personalizadas o que te acompañe en el diseño de tus vacaciones o de la mejor experiencia viajera, puedes contactarme que sin dudas te ayudaré.</p>
                     </div>
                 </div>
@@ -111,5 +115,9 @@
             </div>
         </div>    
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
