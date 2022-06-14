@@ -161,7 +161,9 @@ header .contenedor {
 }
 
 .grid{
-    display: grid;
+    display: flex;
+
+    /*display: grid;
     grid-template-columns: repeat(12, 1fr);
     width: 80%;
     max-width: 1200px;
@@ -170,7 +172,7 @@ header .contenedor {
     gap: 10px;
     overflow: hidden;
     align-items: center;
-    padding: 20px;
+    padding: 20px;*/
 }
 
 @media screen and (max-width: 700px) {
@@ -319,10 +321,13 @@ footer{
     color: #fff;
     text-align: center;
     padding: 40px 0;
-    
-    
 }
-
+/*.card-footer {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    color: white;
+    background-color: #000;*/
+    
+/*
 .textos-footer{
     grid-column: 1/-1;
     gap: 1rem;
@@ -337,11 +342,11 @@ footer{
 [class^="footer-item"]{
     grid-column: span 3;
 }
-
+*/
 
 /*contacto*/
 
-.check {
+/*.check {
     width: 25px;
 }
 .contacto1 {
@@ -410,7 +415,46 @@ input, textarea {
 .imgcontact {
     width: 500px;
     padding-top: 20px;
+} */
+
+/*Modificando Bootstrap*/
+#fondoform {
+    background-image: url(../img/homeoffice.jpg);
 }
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #EC058E;
+    --bs-btn-border-color: #EC058E;
+    --bs-btn-hover-color: #fff;
+}
+
+.form-label {
+    color: #EC058E;
+    font-weight: bold;
+}
+
+.border {
+    border: var(--bs-border-width) var(--bs-border-style) #EC058E!important;
+}
+
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
+    text-decoration: none;
+}
+
+.fixed-bottom {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+
+
 /*viajes*/
 
 .img-video{

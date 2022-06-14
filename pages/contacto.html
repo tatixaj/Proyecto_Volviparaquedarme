@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volvi para quedarme- viajes y lifestyle</title>
-        <link rel="stylesheet" href="../css/style.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/fontello.css">
         <link rel="shortcut icon" href="../img/favicon.jpg">
         <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=PT+Sans+Narrow&family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
-   
+        <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="header">
+    <!--<header class="header">
         <div class="contenedor">
             <img class="imglogo" src="../img/logo.png" alt="">
             <input type="checkbox" id="menu-bar">
@@ -28,10 +29,26 @@
                 </ul>
             </nav>
             
-        </div>
+        </div> -->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
     </header>
-    <div class="grid">
-        <div class="textos-inicio">
+    
+      
+   <!-- <div class="container grid">
+        <section class="container textos-inicio">
             <h1 class="titulo-inicio">Contacto/ Contact</h1>
             <p class="parrafo-inicio"> ¿Tienes alguna pregunta, propuesta o sugerencia? ¡Me encantaría escucharlas! Puedes contactar conmigo a través de mis redes sociales, enviarme un email o rellenar este formulario.</p>
             <hr>
@@ -40,64 +57,80 @@
             <h4 class="txtmail">
                 tatixaj@gmail.com 
             </h4>     
-        </div>
-        <div class="img-banner">
-            <img src="../img//grancanion.jpeg" alt="" class="imgcontact">
-        </div>
-    </div>
-  
-    <main>     
-        <section class="backForm">
-            <article class="form">
-                <form action="#">
-                    <h2 class="contacto11"> Contacto</h2>
-                    <hr>
-                    <label for="Nombre">Nombre</label>
-                    <input id="Nombre" placeholder="Escriba su nombre">
-                    <hr>
-                    <label for="Apellido">Apellido</label>    
-                    <input id="Apellido" placeholder="Escriba su apellido">
-                    <hr>
-                    <label for="Email">Email</label>
-                    <input id="Email" placeholder="Escriba su correo electronico">
-                    <hr>
-                    <label for="Comentarios">Comentarios</label>
-                    <textarea class="tarea" name="Comentarios y sugerencias" id="Comentarios y sugerencias" cols="30" rows="10"></textarea>
-                    <hr>
-                    <div>
-                        <p>Te gustaria recibir info sobre viajes?</p>
-                        <input type="checkbox" name="acepta" value="1"> 
-                        <hr>
-                        <input class="submit" type="submit" value="Enviar formulario">
-                    </div>               
-                </form>
-            
-            </article>
-    
         </section>
+        <div class="img-banner">
+            <img src="../img//grancanion.jpeg" alt="" class="imgcontact img-fluid">
+        </div>
+    </div> -->
+    <main>   
+        <div class= "container row g-3">
+            <div class="text-bg-dark p-3">CONTACTAME</div>
+            <hr>
+            <form class="container row g-3" id="fondoform"></form>
+                <div class="col-md-6">
+                    <label for="inputtext" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col">
+                    <label for="inputtext" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+                <div class="col-md-12">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="hola@gmail.com" id="inputEmail4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Pais</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">Departamento</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elige tu departamento</option>
+                        <option>Montevideo</option>
+                        <option>Canelones</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Deseo recibir noticias viajeras
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-1">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios o sugerencias</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-1">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
     </main>
 
-<footer>
-    <div class="grid">
-        <div class="textos-footer">
-            <h2 class="subtitulo">Contactame a través de mis redes</h2>
-            <p>Todos los derechos reservados | &copy; volviparaquedarme 2022</p>   
-        </div>
-        <div class="footer-item1">
-            <a class="icon-whatsapp" href="https://web.whatsapp.com/" target="_blanck"></a>
-        </div>
-        <div class="footer-item2">
-            <a class="icon-facebook-rect" href="https://www.facebook.com" target="_blanck"></a>
-        </div>
-        <div class="footer-item3">
-            <a class="icon-instagram" href="https://www.instagram.com/volviparaquedarme/?hl=es-la" target="_blanck"></a>
-        </div>
-        <div class="footer-item4">
-            <a class="icon-twitter-rect" href="https://www.twitter.com" target="_blanck"></a>
-        </div>
-    </div>    
+<footer class="footer bg dark fixed-bottom">
+    <div class="border border-danger">
+        
+            <div class="row py-4 d-flex align-items-center">
+                <h2 class="subtitulo">Contactame a través de mis redes</h2>
+                <div class="col-md-12 text center">
+                    <a class="icon-whatsapp text-white mr-4" href="https://web.whatsapp.com/" target="_blanck"></a>
+                    <a class="icon-facebook-rect text-white mr-4" href="https://www.facebook.com" target="_blanck"></a>
+                    <a class="icon-instagram text-white mr-4" href="https://www.instagram.com/volviparaquedarme/?hl=es-la" target="_blanck"></a>
+                    <a class="icon-twitter-rect text-white mr-4" href="https://www.twitter.com" target="_blanck"></a>
+                </div>
+                <p>Todos los derechos reservados | &copy; volviparaquedarme 2022</p>   
+            </div>
+         
+    </div>   
 </footer>
 
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
