@@ -53,7 +53,7 @@ header {
 .imglogo {
     float: left;
     width: 200px;
-    height: 50px;
+    height: 60px;
 }
 
 #menu-bar {
@@ -113,10 +113,14 @@ header .contenedor {
 
     .menu ul li {
         display: inline-block;
-    }
-    ul {
         list-style: none;
     }
+    ul {
+        list-style-type: none;
+    }
+    /*ul {
+        list-style: none;
+    }*/
 
     .menu a:hover{
         background-color: #EC058E;
@@ -389,6 +393,17 @@ footer{
     margin-top: 6rem!important;
 }
 
+#vida-millenial h2 {
+    font-size: 3.5em;
+    color: #000;
+}
+       
+.mb-3 {
+    margin-top: 6rem;
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
 /*viajes*/
 
 .img-video{
@@ -403,7 +418,7 @@ footer{
     margin: auto;
     margin-top: 2rem;
 }
-.cards {
+.cardsv {
     display: flex;
     flex-direction: row;
     gap: 1rem;

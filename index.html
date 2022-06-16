@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volvi para quedarme- viajes y lifestyle</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fontello.css">
@@ -16,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=PT+Sans+Narrow&family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="contenedor">
             <img class="imglogo" src="img/logo.png" alt="">
             <input type="checkbox" id="menu-bar">
@@ -35,19 +34,23 @@
     </header>
     <br>
     <main>
-         <section id="hero-home">
-                <h1 class="animate__animated animate__fadeInDownBig">Volví para quedarme <br> Travel and Lifestyle</h1>
-                <form action="pages/acercademi.html">
-                    <button>Querés conocer más sobre mi?!</button>
-                </form>
-            </section>
-
-            <section id="instagram">
-                <!-- SnapWidget -->
-                <iframe src="https://snapwidget.com/embed/998699" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:1280px; height:160px"></iframe>
+        <div class="container-l">
+            <div class="row">
+                <div class="contenedor">
+                    <section id="hero-home">
+                        <h1 class="animate__animated animate__fadeInDownBig">Volví para quedarme <br> Travel and Lifestyle</h1>
+                        <form action="pages/acercademi.html">
+                            <button>Querés conocer más sobre mi?!</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+                <section id="instagram">
+                    <!-- SnapWidget -->
+                    <iframe src="https://snapwidget.com/embed/998699" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:1280px; height:160px"></iframe>
+                    </section>
                 </section>
-    
-            <Section id="vida-millenial">
+            <section id="vida-millenial">
                 <div class="container-home">
                     <div class="img-containerhome" data-aos="zoom-in"></div>
                     <div class="texto-vida">
@@ -55,9 +58,8 @@
                         <p class="texto-home">Si estas buscando inspiracion viajera, guias de viaje personalizadas o que te acompañe en el diseño de tus vacaciones o de la mejor experiencia viajera, puedes contactarme que sin dudas te ayudaré.</p>
                     </div>
                 </div>
-            </Section>
-
-           
+            </section>  
+        </div> 
         <section id="about-us">
             <div class="container-millenial">
                 <h2 class="subtitulo">Comienzos de mi <span class="color-acento">vida viajera</span></h2>
@@ -71,50 +73,48 @@
                     ¡Espero que mi contenido te inspire a explorar lugares increíbles!</p>
             </div>
         </section> 
-        
-        <section class="mission grid">
-            <div class="textos-mission">
-                <h2>Tips para viajar <span class="color-acento">barato</span></h2>
-                <div class="img-mission">
-                    <img src="img/tilcarayo.jpeg" alt="" class="img">
+       
+        <div class="container">
+            <section class="mission grid">
+                <div class="textos-mission">
+                    <h2>Tips para viajar <span class="color-acento">barato</span></h2>
+                    <div class="img-mission">
+                        <img class="img img-fluid" src="img/tilcarayo.jpeg" alt="" >
+                    </div>
+                    <div class="texto-mission mt-4">
+                        <h3>Tip 1: Aprender a buscar vuelos baratos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta suscipit tenetur veritatis deleniti iusto.</p>
+                    </div>
+                    <div class="texto-mission">
+                        <h3>Tip 2: Reservar alojamientos con anticipacion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta suscipit tenetur veritatis deleniti iusto.</p>
+                    </div>
+                    <div class="texto-mission">
+                        <h3>Tip 3: Voluntariados por el mundo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta suscipit tenetur veritatis deleniti iusto.</p>
+                    </div>
                 </div>
-                <div class="texto-mission">
-                    <h3>01 tips</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta suscipit tenetur veritatis deleniti iusto.</p>
-                </div>
-                <div class="texto-mission">
-                    <h3>01 tips</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta suscipit tenetur veritatis deleniti iusto.</p>
-                </div>
-                <div class="texto-mission">
-                    <h3>01 tips</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta suscipit tenetur veritatis deleniti iusto.</p>
-                </div>
-            </div>
-            
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <div class="grid">
-            <div class="textos-footer">
-                <h2 class="subtitulo">Contactame a través de mis redes</h2>
-                <p>Todos los derechos reservados | &copy; volviparaquedarme 2022</p>  
-            </div>
-            <div class="footer-item1">
-                <a class="icon-whatsapp" href="https://web.whatsapp.com/" target="_blanck"></a>
-            </div>
-            <div class="footer-item2">
-                <a class="icon-facebook-rect" href="https://www.facebook.com" target="_blanck"></a>
-            </div>
-            <div class="footer-item3">
-                <a class="icon-instagram" href="https://www.instagram.com/volviparaquedarme/?hl=es-la" target="_blanck"></a>
-            </div>
-            <div class="footer-item4">
-                <a class="icon-twitter-rect" href="https://www.twitter.com" target="_blanck"></a>
-            </div>
-        </div>    
+    <footer class="footer bg dark fixed-bottom">
+        <div class="border border-danger">
+            
+                <div class="row py-4 d-flex align-items-center">
+                    <h2 class="subtitulo">Contactame a través de mis redes</h2>
+                    <div class="col-md-12 text center">
+                        <a class="icon-whatsapp text-white mr-4" href="https://web.whatsapp.com/" target="_blanck"></a>
+                        <a class="icon-facebook-rect text-white mr-4" href="https://www.facebook.com" target="_blanck"></a>
+                        <a class="icon-instagram text-white mr-4" href="https://www.instagram.com/volviparaquedarme/?hl=es-la" target="_blanck"></a>
+                        <a class="icon-twitter-rect text-white mr-4" href="https://www.twitter.com" target="_blanck"></a>
+                    </div>
+                    <p>Todos los derechos reservados | &copy; volviparaquedarme 2022</p>   
+                </div>
+             
+        </div>   
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
