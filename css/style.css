@@ -34,7 +34,6 @@ body{
   font-family: var(--font-principal)
 }
 
-
 header {
     width: 100%;
     height: 60px;
@@ -50,7 +49,7 @@ header {
     margin: auto;
 }
 
-.imglogo {
+.img-logo {
     float: left;
     width: 200px;
     height: 60px;
@@ -71,6 +70,7 @@ header .contenedor {
     position: relative;
 }
 
+/*
 .menu {
     display: none;
     position: absolute;
@@ -118,10 +118,11 @@ header .contenedor {
     ul {
         list-style-type: none;
     }
+
     /*ul {
         list-style: none;
     }*/
-
+/*
     .menu a:hover{
         background-color: #EC058E;
         
@@ -140,6 +141,7 @@ header .contenedor {
         width: 1000px;
     }
 }
+*/
 
 #hero-home{
     display: flex;
@@ -326,27 +328,7 @@ footer{
     text-align: center;
     padding: 40px 0;
 }
-/*.card-footer {
-    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
-    color: white;
-    background-color: #000;*/
-    
-/*
-.textos-footer{
-    grid-column: 1/-1;
-    gap: 1rem;
-}
 
-[class^="footer-item"] a{
-    color: #fff;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-[class^="footer-item"]{
-    grid-column: span 3;
-}
-*/
 
 /*contacto*/
 
@@ -404,6 +386,46 @@ footer{
     justify-content: center;
     align-items: center;*/
 }
+
+
+.btn-outline-success {
+    --bs-btn-color: rgb(249 5 244 / 70%);
+    --bs-btn-border-color: rgb(249 5 244 / 70%);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #198754;
+    --bs-btn-hover-border-color: #198754;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #198754;
+    --bs-btn-active-border-color: #198754;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #198754;
+    --bs-btn-disabled-bg: transparent;
+    --bs-gradient: none;
+}
+
+.navbar {
+
+    --bs-navbar-color: rgb(250, 249, 249);
+    --bs-navbar-hover-color: rgba(252, 5, 219, 0.7);
+    --bs-navbar-active-color: rgba(221, 10, 151, 0.9);
+    --bs-navbar-toggler-border-color: rgba(177, 19, 209, 0.1);
+   
+}
+
+.logo {
+    height: 80px;
+    width: 300px;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: rgba(221, 10, 151, 0.9);
+    background-color: rgb(243, 165, 219);
+}
+
 /*viajes*/
 
 .img-video{
