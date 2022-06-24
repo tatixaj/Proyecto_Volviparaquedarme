@@ -1,0 +1,14 @@
+/* MISC*/
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+
+/*PARTIALS*/
+@import './partials/header';
+@import './partials/footer';
+
+/*VIEWS*/
+@import './views/acercademi';
+@import './views/contacto';
+@import './views/lifestyle';
+@import './views/viajes'

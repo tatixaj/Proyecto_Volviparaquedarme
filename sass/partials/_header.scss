@@ -1,0 +1,21 @@
+.navbar {
+    --bs-navbar-color: rgb(250, 249, 249);
+    --bs-navbar-hover-color: rgba(252, 5, 219, 0.7);
+    --bs-navbar-active-color: rgba(190, 53, 142, 0.9);
+    --bs-navbar-toggler-border-color: rgba(177, 19, 209, 0.1);  
+    --bs-navbar-padding-y: 0;
+    --bs-navbar-brand-padding-y: 0;
+}
+
+.logo {
+    height: 80px;
+    width: 300px;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: rgba(221, 10, 151, 0.9);
+    background-color: rgb(243, 165, 219);
+}

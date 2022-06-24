@@ -1,0 +1,124 @@
+/* MISC*/
+/*colors*/
+/*spacings*/
+/*Font- family */
+/*Font- sizes*/
+/*Normalize*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Raleway"; }
+
+/*PARTIALS*/
+.navbar {
+  --bs-navbar-color: rgb(250, 249, 249);
+  --bs-navbar-hover-color: rgba(252, 5, 219, 0.7);
+  --bs-navbar-active-color: rgba(190, 53, 142, 0.9);
+  --bs-navbar-toggler-border-color: rgba(177, 19, 209, 0.1);
+  --bs-navbar-padding-y: 0;
+  --bs-navbar-brand-padding-y: 0; }
+
+.logo {
+  height: 80px;
+  width: 300px; }
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: rgba(221, 10, 151, 0.9);
+  background-color: #f3a5db; }
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0; }
+
+/*VIEWS*/
+.cardsv {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  padding: 24px;
+  flex-wrap: wrap; }
+  .cardsv .box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1 1 30%;
+    max-width: 400px;
+    min-width: 300px; }
+    .cardsv .box .box__info {
+      display: flex;
+      flex-direction: column;
+      padding: 2.4rem;
+      gap: 1rem; }
+      .cardsv .box .box__info .box__title {
+        font-family: "Raleway", serif;
+        color: #000000;
+        font-size: 2.4rem; }
+      .cardsv .box .box__info .box__subtitle {
+        color: #6A8D92;
+        font-size: 1.4rem; }
+      .cardsv .box .box__info .box__text {
+        color: #403F4C;
+        font-size: 18px;
+        text-align: justify; }
+
+/*gallery*/
+.subtitulo--viajes {
+  text-align: center; }
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  padding: 30px;
+  grid-gap: 10px; }
+  .gallery-container .galleryItem {
+    position: relative; }
+    .gallery-container .galleryItem .galleryItem:nth-child(4) {
+      grid-column-start: span 2; }
+    .gallery-container .galleryItem .galleryItem:nth-child(5) {
+      grid-row-start: span 2; }
+    .gallery-container .galleryItem .galleryItem:nth-child(5) {
+      grid-row-start: span 2; }
+    .gallery-container .galleryItem .galleryItem:nth-child(8) {
+      grid-column-start: span 2; }
+    .gallery-container .galleryItem .galleryItem:nth-child(7) {
+      grid-row-start: span 3; }
+    .gallery-container .galleryItem .galleryItem:nth-child(3) {
+      grid-row-start: span 2; }
+    .gallery-container .galleryItem .galleryItem:nth-child(9) {
+      grid-row-start: span 2; }
+    .gallery-container .galleryItem .galleryItem:nth-child(6) {
+      grid-row-start: span 2; }
+    .gallery-container .galleryItem .galleryItem:nth-child(10) {
+      grid-row-start: span 2; }
+    .gallery-container .galleryItem .galleryItem:nth-child(6) {
+      grid-column-start: span 2; }
+    .gallery-container .galleryItem .galleryImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .gallery-container .galleryItem .galleryTitle {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background: linear-gradient(rgba(255, 255, 255, 0.1), black);
+      width: 100%;
+      margin: 0%;
+      padding: 20px; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+  .container .viajes-textos {
+    text-align: center;
+    padding: 20px;
+    /*aca hay un h2, dos parrafos y un img que estan hechos con bootstrap, entonces no tienen css especifico o modificado. todos son hijos de .viajes-textos*/ }

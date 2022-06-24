@@ -34,74 +34,15 @@ body{
   font-family: var(--font-principal)
 }
 
-header {
-    width: 100%;
-    height: 60px;
-    background-color: #000000;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
-.contenedor {
-    width: 98%;
-    margin: auto;
-}
-
-.img-logo {
-    float: left;
-    width: 200px;
-    height: 60px;
-}
-
-#menu-bar {
-    display: none;
-}
-
-header label {
-    float: right;
-    font-size: 28px;
-    margin: 6px 0;
-    cursor: pointer;
-}
-
-header .contenedor {
-    position: relative;
-}
-
-.container-1 {
-    margin-bottom: 0;
+#main{
+    background-image: url(../img/patternpad.svg);
 }
 
 
-
-@media screen and (max-width: 700px) {
-    
-    ul {
-        list-style: none;
-    }
-    }
-
-    @media screen and (max-width: 480px) {
-    .grid, .img-banner, .titulo-inicio {
-        grid-template-columns: 1/1;
-        align-items: center;
-       
-    }
-    #instagram {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 50px;
-    }
-        
+#fondoViajes{
+    background-image: url(../img/fondopastel.jpg);
 }
-@media screen and (max-width: 480px) {
-    .titulo-inicio {
-        padding-top: 5rem;
-    }
-}
+
 
 .weight-400{
     font-weight: 400;
@@ -265,25 +206,20 @@ footer{
     --bs-btn-border-color: rgb(249 5 244 / 70%);
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #5499C7;
-    --bs-btn-hover-border-color: #198754;
-    --bs-btn-focus-shadow-rgb: 25,135,84;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #198754;
-    --bs-btn-active-border-color: #198754;
+    --bs-btn-active-border-color: #e978bd;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #198754;
-    --bs-btn-disabled-bg: transparent;
-    --bs-gradient: none;
 }
 
 .navbar {
-
     --bs-navbar-color: rgb(250, 249, 249);
     --bs-navbar-hover-color: rgba(252, 5, 219, 0.7);
-    --bs-navbar-active-color: rgba(243, 205, 230, 0.9);
+    --bs-navbar-active-color: rgba(190, 53, 142, 0.9);
     --bs-navbar-toggler-border-color: rgba(177, 19, 209, 0.1);  
     --bs-navbar-padding-y: 0;
+    --bs-navbar-brand-padding-y: 0;
 }
+
 
 .logo {
     height: 80px;
@@ -350,7 +286,7 @@ footer{
     font-size: 18px;
     text-align: justify;
 }
-/*galley*/
+/*gallery*/
 .subtitulo--viajes {
     text-align: center;
 }
@@ -477,7 +413,7 @@ button:hover{
     flex-direction: column;
     height: 90vh;
     color: white;
-    background-image: linear-gradient(
+   background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
@@ -806,7 +742,8 @@ button:hover{
     #tutorias button{
         font-size: 2em;
     }
-}
+} 
+
 
 @media (min-width: 1200px) {
     #extras{
@@ -814,6 +751,31 @@ button:hover{
     }
 }
 
-#main{
-    background-image: url(../img/patternpad.svg);
+
+@media screen and (max-width: 700px) {
+    
+    ul {
+        list-style: none;
+    }
+    }
+
+    @media screen and (max-width: 480px) {
+    .grid, .img-banner, .titulo-inicio {
+        grid-template-columns: 1/1;
+        align-items: center;
+       
+    }
+    #instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+        
+}
+
+@media screen and (max-width: 480px) {
+    .titulo-inicio {
+        padding-top: 5rem;
+    }
 }
