@@ -12,6 +12,12 @@
 body {
   font-family: "Raleway"; }
 
+#main {
+  background-image: url(../img/patternpad.svg); }
+
+.color-acento {
+  color: #EC058E; }
+
 /*PARTIALS*/
 .navbar {
   --bs-navbar-color: rgb(250, 249, 249);
@@ -21,16 +27,16 @@ body {
   --bs-navbar-padding-y: 0;
   --bs-navbar-brand-padding-y: 0; }
 
-.logo {
-  height: 80px;
-  width: 300px; }
-
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
   color: rgba(221, 10, 151, 0.9);
   background-color: #f3a5db; }
+
+.logo {
+  height: 80px;
+  width: 300px; }
 
 footer {
   background: #000;
@@ -39,6 +45,25 @@ footer {
   padding: 40px 0; }
 
 /*VIEWS*/
+#heroContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/conectados.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#heroContact h1 {
+  font-size: 3.5em; }
+
+#fondoform {
+  background-image: url(../img/homeoffice.jpg); }
+
 .cardsv {
   display: flex;
   flex-direction: row;
@@ -122,3 +147,83 @@ footer {
     text-align: center;
     padding: 20px;
     /*aca hay un h2, dos parrafos y un img que estan hechos con bootstrap, entonces no tienen css especifico o modificado. todos son hijos de .viajes-textos*/ }
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/lifestyle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px; }
+
+#vida-millenial .container-home {
+  text-align: center;
+  padding: 200px 12px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ruta66.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 60px;
+  margin-bottom: 40px; }
+
+.container-home p {
+  color: white; }
+
+.container-home {
+  max-width: 1400px;
+  margin: auto; }
+
+#vida-millenial h2 {
+  font-size: 3.5em;
+  color: #000; }
+
+#about-us {
+  background: linear-gradient(to right, #434343 0%, black 100%);
+  color: #fff;
+  height: auto;
+  padding-bottom: 60px; }
+
+#about-us h2 {
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+  margin: 0.9em; }
+
+#about-us p {
+  grid-column: 1/-1;
+  line-height: 2em;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: justify;
+  font-size: calc(1em + 1vw); }
+
+.textos-mission {
+  grid-column: 1/13;
+  grid-row: 1/-1;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.textos-mission .subtitulo {
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+  margin: 0; }
+
+.img-mission {
+  grid-column: 1/7;
+  grid-row: 1/-1;
+  transition: transform .8s; }
+
+.img-mission:hover {
+  transform: scale(1.07); }

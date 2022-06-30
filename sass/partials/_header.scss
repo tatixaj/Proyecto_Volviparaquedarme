@@ -7,10 +7,6 @@
     --bs-navbar-brand-padding-y: 0;
 }
 
-.logo {
-    height: 80px;
-    width: 300px;
-}
 
 .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
@@ -18,4 +14,9 @@
     line-height: 1;
     color: rgba(221, 10, 151, 0.9);
     background-color: rgb(243, 165, 219);
+}
+
+.logo {
+    height: 80px;
+    width: 300px;
 }
