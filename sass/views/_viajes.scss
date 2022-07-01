@@ -14,11 +14,12 @@
         max-width: 400px;
         min-width: 300px;
 
+
         .box__info {
             display: flex;
             flex-direction: column;
             padding: $spacing-medium;
-            gap: $spacing-xsmall;
+            gap: map-get($spacings, $spacing-xsmall);
 
             .box__title {
                 font-family: $font-title;

@@ -3,4 +3,33 @@ footer{
     color: #fff;
     text-align: center;
     padding: 40px 0;
+
+    .btn{
+        width: 150px;
+        padding: 10px 12px;
+        font-size: 18px;
+        margin: 5px auto;
+        border: none;
+
+    }
+
+    .btn--aceptar{
+        @extend .btn;
+        color: #fff;
+        background-color: #EC058E;
+        &:hover {
+            background-color:  #a5158dfd;
+
+        }
+    }
+
+    .btn--cancelar{
+        @extend .btn;
+        color: #fff;
+        background-color: #b1a9ae;
+        &:hover {
+            background-color: #85818379;
+
+        }
+    }
 }

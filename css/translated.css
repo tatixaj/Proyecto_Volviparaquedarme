@@ -1,6 +1,18 @@
 /* MISC*/
 /*colors*/
 /*spacings*/
+.spacing-large {
+  padding: 6rem; }
+
+.spacing-medium {
+  padding: 2.4rem; }
+
+.spacing-small {
+  padding: 2rem; }
+
+.spacing-xsmall {
+  padding: 1rem; }
+
 /*Font- family */
 /*Font- sizes*/
 /*Normalize*/
@@ -43,6 +55,22 @@ footer {
   color: #fff;
   text-align: center;
   padding: 40px 0; }
+  footer .btn, footer .btn--aceptar, footer .btn--cancelar {
+    width: 150px;
+    padding: 10px 12px;
+    font-size: 18px;
+    margin: 5px auto;
+    border: none; }
+  footer .btn--aceptar {
+    color: #fff;
+    background-color: #EC058E; }
+    footer .btn--aceptar:hover {
+      background-color: #a5158dfd; }
+  footer .btn--cancelar {
+    color: #fff;
+    background-color: #b1a9ae; }
+    footer .btn--cancelar:hover {
+      background-color: #85818379; }
 
 /*VIEWS*/
 #heroContact {
@@ -81,8 +109,7 @@ footer {
     .cardsv .box .box__info {
       display: flex;
       flex-direction: column;
-      padding: 2.4rem;
-      gap: 1rem; }
+      padding: 2.4rem; }
       .cardsv .box .box__info .box__title {
         font-family: "Raleway", serif;
         color: #000000;
@@ -165,6 +192,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  /*display: flex;
+    align-items: center;
+    justify-content: center;*/
   margin: 20px; }
 
 #vida-millenial .container-home {

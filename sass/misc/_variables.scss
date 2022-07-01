@@ -11,6 +11,19 @@ $spacing-medium: 2.4rem;
 $spacing-small: 2rem;
 $spacing-xsmall: 1rem;
 
+$spacings: (
+    spacing-large: 6rem,
+    spacing-medium: 2.4rem,
+    spacing-small: 2rem,
+    spacing-xsmall: 1rem
+);
+
+@each $key, $val in $spacings {
+    .#{$key} {
+        padding: #{$val};
+    }
+}
+
 /*Font- family */
 $font-principal: 'Raleway';
 $font-title: 'Raleway', serif;
