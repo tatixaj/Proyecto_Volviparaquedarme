@@ -21,6 +21,7 @@
     --text-base: 1.6rem;
     --text-small: 1.4rem;
 }
+
 /*NORMALIZE*/
 
 *{
@@ -152,11 +153,12 @@ footer{
 
 
 /*contacto*/
+/*
 
 #fondoform {
     background-image: url(../img/homeoffice.jpg);
 }
-
+*/
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #EC058E;
@@ -247,6 +249,7 @@ footer{
     margin: auto;
   
 }
+/*
 .cardsv {
     display: flex;
     flex-direction: row;
@@ -286,6 +289,7 @@ footer{
     text-align: justify;
 }
 /*gallery*/
+
 .subtitulo--viajes {
     text-align: center;
 }
@@ -358,7 +362,7 @@ footer{
     padding: 20px;
 }
 
-/*acerca de mi*/
+/*acerca de mi
 .row {
     display: flex;
 }
@@ -368,17 +372,18 @@ footer{
     padding: 5px;
     width: 100%;
 }
-
+/*
 .lista-ordenada{
     margin-left: 20px;
 }
+/*
 .lugares{
     display: flex;
     text-align: center;
     margin-left: 10%;
     padding: 20px;
 }
-
+*/
 /*lifestyle*/
 button{
     font-size: 1em;
@@ -404,6 +409,7 @@ button:hover{
     max-width: 1400px;
     margin: auto;
 }
+
 #hero{
     display: flex;
     align-items: center;
@@ -425,8 +431,7 @@ button:hover{
 
 #hero h1{
     font-size: 3.5em;
-}
-
+} 
 #heroContact{
     display: flex;
     align-items: center;
@@ -502,7 +507,7 @@ button:hover{
 }
 
 .color-acento{ color: #EC058E;}
-
+/*
 #actividades{
     background-color: rgb(30, 30, 30);
     color: white;
@@ -568,11 +573,12 @@ button:hover{
     ,url(../img/yoga.jpg);
     
 }
+
 #extras .container-millenial{
     text-align: center;
     padding: 200px 12px;
 }
-
+/*
 #extras li{
     margin: 15px 0px;
     font-weight: bold;
@@ -597,7 +603,7 @@ button:hover{
 #tutorias button{
     font-size: 3vh;
 }
-
+/*
 @media (min-width: 720px){
     #hero h1{
         font-size: 5em;

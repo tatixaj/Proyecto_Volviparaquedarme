@@ -1,0 +1,133 @@
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+   background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/lifestyle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    font-size: 3.5em;
+}
+
+#vida-millenial .container-millenial{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#vida-millenial h2{
+    font-size: 3em;
+}
+
+.actividades{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+
+#actividades{
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    justify-content: space-between;
+}
+
+#actividades .container-millenial{
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+#actividades h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#actividades p{
+    display: none;
+}
+
+.actividades{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.actividades .cartas{
+    background-color: #000;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+    
+
+.actividades .cartas:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/food.jpg);
+    
+}
+
+
+.actividades .cartas:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/coffee.jpg);
+    
+}
+
+.actividades .cartas:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/yoga.jpg);
+    
+}
+
+#extras li{
+    margin: 15px 0px;
+    font-weight: bold;
+    list-style: none;
+}
+
+#tutorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 50vh;
+}
+
+#tutorias h2{
+    font-size: 5vh;
+}
+
+#tutorias button{
+    font-size: 3vh;
+}
+
+.color-acento{ color: #EC058E;}
