@@ -30,18 +30,135 @@ body {
 .color-acento {
   color: #EC058E; }
 
+@media (min-width: 720px) {
+  #hero h1 {
+    font-size: 5em; }
+  #vida-millenial .container-millenial {
+    display: flex;
+    justify-content: space-evenly; }
+  #vida-millenial .container-home {
+    display: flex;
+    justify-content: space-evenly; }
+  #vida-millenial .texto-vida {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px; }
+  #vida-millenial h2 {
+    margin-top: 0px;
+    padding-bottom: 10px; }
+  #about-us h2 {
+    margin-top: 0px;
+    padding-bottom: 10px;
+    animation: maquina 5s infinite alternate; }
+  #vida-millenial .img-containermil {
+    background-image: url("../img/compu.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px; }
+  .img-containerhome {
+    background-image: url("../img/montaniasnoa2.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 300px;
+    border-radius: 20%; }
+  #actividades .actividades {
+    display: flex;
+    justify-content: center; }
+  #services .items {
+    display: flex;
+    justify-content: center; }
+  #actividades p {
+    display: block;
+    margin-bottom: 30px; }
+  #about-us p {
+    display: block;
+    margin-bottom: 30px; }
+  #services p {
+    display: block;
+    margin-bottom: 5px; }
+  #actividades h3 {
+    margin-top: 0;
+    font-size: 40px;
+    padding-bottom: 1em; }
+  #services h3 {
+    margin-top: 0;
+    font-size: 25px;
+    padding-bottom: 0.5em; }
+  #actividades h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 4em; }
+  #services h2 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 2em; }
+  #actividades .cartas {
+    padding: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
+  #services .item {
+    padding: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
+  #extras {
+    background-image: url(../img/millenialwoman.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    background-position: calc(100vw - 700px) 120px; }
+  #extras .container-millenial {
+    text-align: initial; }
+  #extras ul {
+    margin-left: 100px; }
+  #tutorias h2 {
+    font-size: 4em;
+    padding-bottom: 15px; }
+  #tutorias button {
+    font-size: 2em; } }
+
+@media (min-width: 1200px) {
+  #extras {
+    background-position-x: calc(100vw - 800px); } }
+
+@media screen and (max-width: 700px) {
+  ul {
+    list-style: none; } }
+
+@media screen and (max-width: 480px) {
+  .grid, .img-banner, .titulo-inicio {
+    grid-template-columns: 1/1;
+    align-items: center; }
+  #instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px; } }
+
+@media screen and (max-width: 480px) {
+  .titulo-inicio {
+    padding-top: 5rem; } }
+
 /*PARTIALS*/
-.navbar {
-  --bs-navbar-color: rgb(250, 249, 249);
-  --bs-navbar-hover-color: rgba(252, 5, 219, 0.7);
-  --bs-navbar-active-color: rgba(190, 53, 142, 0.9);
-  --bs-navbar-toggler-border-color: rgba(177, 19, 209, 0.1);
-  --bs-navbar-padding-y: 0;
-  --bs-navbar-brand-padding-y: 0; }
+.navbar .nav-item .nav-link {
+  color: white; }
+  .navbar .nav-item .nav-link.active {
+    color: #EC058E; }
+
+.navbar .btn, .navbar footer .btn--aceptar, footer .navbar .btn--aceptar, .navbar footer .btn--cancelar, footer .navbar .btn--cancelar {
+  color: #EC058E;
+  border-color: #EC058E; }
+  .navbar .btn:hover, .navbar footer .btn--aceptar:hover, footer .navbar .btn--aceptar:hover, .navbar footer .btn--cancelar:hover, footer .navbar .btn--cancelar:hover {
+    background-color: #EC058E; }
 
 .navbar-toggler {
-  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
-  font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
   color: rgba(221, 10, 151, 0.9);
   background-color: #f3a5db; }
@@ -219,7 +336,7 @@ footer {
         color: #000000;
         font-size: 2.4rem; }
       .cardsv .box .box__info .box__subtitle {
-        color: #6A8D92;
+        color: #FFFFFF;
         font-size: 1.4rem; }
       .cardsv .box .box__info .box__text {
         color: #403F4C;
@@ -294,6 +411,22 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
+  #hero h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FFFFFF; }
+  #hero button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #EC058E;
+    margin-top: 12%; }
 
 #instagram {
   display: flex;
@@ -305,6 +438,8 @@ footer {
   margin: 20px; }
 
 #vida-millenial .container-home {
+  max-width: 1400px;
+  margin: auto;
   text-align: center;
   padding: 200px 12px;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ruta66.jpg);
@@ -313,57 +448,80 @@ footer {
   background-position: center center;
   margin-top: 60px;
   margin-bottom: 40px; }
-
-.container-home p {
-  color: white; }
-
-.container-home {
-  max-width: 1400px;
-  margin: auto; }
-
-#vida-millenial h2 {
-  font-size: 3.5em;
-  color: #000; }
+  #vida-millenial .container-home .img-containerhome {
+    background-image: url("../img/montaniasnoa2.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+    border-radius: 20%; }
+  #vida-millenial .container-home .texto-vida {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #vida-millenial .container-home .texto-vida h2 {
+      font-size: 3.5em;
+      color: #000; }
+    #vida-millenial .container-home .texto-vida p {
+      color: white; }
 
 #about-us {
   background: linear-gradient(to right, #434343 0%, black 100%);
   color: #fff;
   height: auto;
   padding-bottom: 60px; }
+  #about-us .container-millenial {
+    max-width: 1400px;
+    margin: auto; }
+    #about-us .container-millenial h2 {
+      font-size: 3em;
+      text-align: center;
+      padding: 1em;
+      margin: 0.9em; }
+    #about-us .container-millenial p {
+      grid-column: 1/-1;
+      line-height: 2em;
+      margin-left: 30px;
+      margin-right: 30px;
+      text-align: justify;
+      font-size: calc(1em + 1vw); }
 
-#about-us h2 {
-  font-size: 3em;
-  text-align: center;
-  padding: 1em;
-  margin: 0.9em; }
-
-#about-us p {
-  grid-column: 1/-1;
-  line-height: 2em;
-  margin-left: 30px;
-  margin-right: 30px;
-  text-align: justify;
-  font-size: calc(1em + 1vw); }
-
-.textos-mission {
-  grid-column: 1/13;
-  grid-row: 1/-1;
-  margin-bottom: 20px;
-  text-align: center; }
-
-.textos-mission .subtitulo {
-  font-size: 3em;
-  text-align: center;
-  padding: 1em;
-  margin: 0; }
-
-.img-mission {
-  grid-column: 1/7;
-  grid-row: 1/-1;
-  transition: transform .8s; }
-
-.img-mission:hover {
-  transform: scale(1.07); }
-
-.color-acento {
-  color: #EC058E; }
+.container {
+  max-width: 1200px;
+  margin: auto; }
+  .container .mission-grid .textos-mission {
+    grid-column: 1/13;
+    grid-row: 1/-1;
+    margin-bottom: 20px;
+    text-align: center; }
+    .container .mission-grid .textos-mission .subtitulo {
+      font-size: 3em;
+      text-align: center;
+      padding: 1em;
+      margin: 0; }
+    .container .mission-grid .textos-mission .img-mission {
+      grid-column: 1/7;
+      grid-row: 1/-1;
+      transition: transform .8s; }
+    .container .mission-grid .textos-mission .img-mission:hover {
+      transform: scale(1.07); }
+    .container .mission-grid .textos-mission .accordion {
+      border-color: #000; }
+      .container .mission-grid .textos-mission .accordion .accordion-item {
+        color: #dd57cc; }
+        .container .mission-grid .textos-mission .accordion .accordion-item .accordion-header {
+          color: #000; }
+          .container .mission-grid .textos-mission .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+            color: black;
+            font-weight: bolder;
+            background-color: #FAFAFA;
+            border-bottom: #EC058E solid 2px; }
+          .container .mission-grid .textos-mission .accordion .accordion-item .accordion-header .accordion-button:focus {
+            box-shadow: none;
+            border-color: none; }
+          .container .mission-grid .textos-mission .accordion .accordion-item .accordion-header .accordion-button ::after {
+            color: #000; }
