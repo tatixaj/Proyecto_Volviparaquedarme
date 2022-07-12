@@ -25,4 +25,23 @@
     background-image: url(../img/homeoffice.jpg);
 }
 
-.color-acento{ color: #EC058E;}
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+    .row {
+        display: flex;
+    }
+}
+
+.btn-primary {
+    --bs-btn-bg: #EC058E;
+    --bs-btn-border-color: #1f0115;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: black;
+    --bs-btn-hover-border-color: #ec058e;
+
+}
+.color-acento{ 
+    color: #EC058E;
+}

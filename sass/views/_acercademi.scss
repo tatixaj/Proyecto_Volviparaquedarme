@@ -1,3 +1,14 @@
+.tarjeta_subti{
+    font-family: "Raleway", serif;
+    color: #000000;
+    font-size: 2.4rem;
+}
+
+.stretched-link {
+    color: $alternative;
+    text-decoration: none;
+}
+
 
 .lugares{
     display: flex;
@@ -11,4 +22,17 @@
     margin-left: 20px;
 }
 
-.color-acento{ color: #EC058E;}
+.row {
+    display: flex;
+
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+        width: 100%;
+    }
+}
+
+
+.color-acento{ 
+    color: #EC058E;
+}

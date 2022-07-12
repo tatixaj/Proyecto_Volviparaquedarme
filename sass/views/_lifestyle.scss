@@ -21,6 +21,11 @@
     font-size: 3.5em;
 }
 
+#hero .btn {
+    color: white;
+    background-color: #EC058E;
+}
+
 #vida-millenial .container-millenial{
     text-align: center;
     padding: 200px 12px;
@@ -30,14 +35,6 @@
     font-size: 3em;
 }
 
-.actividades{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    
-}
-
-
 #actividades{
     display: flex;
     background-color: rgb(30, 30, 30);
@@ -46,7 +43,6 @@
 }
 
 #actividades .container-millenial{
-    
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
 }
@@ -54,6 +50,7 @@
 #actividades h2{
     margin-top: 0;
     font-size: 3em;
+    text-align: center;
 }
 
 #actividades p{
@@ -71,8 +68,18 @@
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
+
+    .btn{
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        color:  white;
+        background-color: #EC058E;
+        margin-top: 12%;
+        }
 }
-    
 
 .actividades .cartas:first-child{
     background-image: linear-gradient(
@@ -105,11 +112,31 @@
     
 }
 
-#extras li{
-    margin: 15px 0px;
-    font-weight: bold;
-    list-style: none;
-}
+#extras  {
+    display: flex;
+    align-items: flex-end;
+    max-width: 1400px;
+    margin: auto;
+    background-image: url(../img/millenialwoman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+
+        li{
+            margin: 15px 0px;
+            font-weight: bold;
+            font-size: 1em;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+
+
+
 
 #tutorias{
     display: flex;
@@ -117,17 +144,28 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(30, 30, 30);
     color: white;
-    height: 50vh;
-}
+    height: 30vh;
 
-#tutorias h2{
-    font-size: 5vh;
-}
+    .btn{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: #EC058E;
+        margin-top: 12%;
+    }
 
-#tutorias button{
-    font-size: 3vh;
+    h2{
+        font-size: 4vh;
+        color: #000;
+    }
 }
+  
 
-.color-acento{ color: #EC058E;}
+
+.color-acento{ 
+    color: #EC058E;
+}

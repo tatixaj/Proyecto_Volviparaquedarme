@@ -146,16 +146,34 @@ body {
   .titulo-inicio {
     padding-top: 5rem; } }
 
+@media screen and (max-width: 600px) {
+  .img-containerhome {
+    display: none; } }
+
+@media screen and (max-width: 400px) {
+  #vida-millenial .container-home .texto-vida {
+    font-size: 10px;
+    text-align: center; }
+    #vida-millenial .container-home .texto-vida p {
+      text-align: center; }
+  #about-us .container-millenial .subtitulo {
+    font-size: 25px;
+    text-align: center; } }
+
 /*PARTIALS*/
+.navbar .navbar-toggler {
+  color: rgba(221, 10, 151, 0.9);
+  background-color: #f3a5db; }
+
 .navbar .nav-item .nav-link {
   color: white; }
   .navbar .nav-item .nav-link.active {
     color: #EC058E; }
 
-.navbar .btn, .navbar footer .btn--aceptar, footer .navbar .btn--aceptar, .navbar footer .btn--cancelar, footer .navbar .btn--cancelar {
+.navbar .btn {
   color: #EC058E;
   border-color: #EC058E; }
-  .navbar .btn:hover, .navbar footer .btn--aceptar:hover, footer .navbar .btn--aceptar:hover, .navbar footer .btn--cancelar:hover, footer .navbar .btn--cancelar:hover {
+  .navbar .btn:hover {
     background-color: #EC058E; }
 
 .navbar-toggler {
@@ -172,24 +190,26 @@ footer {
   color: #fff;
   text-align: center;
   padding: 40px 0; }
-  footer .btn, footer .btn--aceptar, footer .btn--cancelar {
+  footer .btn {
     width: 150px;
     padding: 10px 12px;
     font-size: 18px;
     margin: 5px auto;
-    border: none; }
-  footer .btn--aceptar {
-    color: #fff;
-    background-color: #EC058E; }
-    footer .btn--aceptar:hover {
-      background-color: #a5158dfd; }
-  footer .btn--cancelar {
-    color: #fff;
-    background-color: #b1a9ae; }
-    footer .btn--cancelar:hover {
-      background-color: #85818379; }
+    border: none;
+    color: #EC058E; }
+  footer .icon {
+    text-decoration: none; }
 
 /*VIEWS*/
+.tarjeta_subti {
+  font-family: "Raleway", serif;
+  color: #000000;
+  font-size: 2.4rem; }
+
+.stretched-link {
+  color: #EC058E;
+  text-decoration: none; }
+
 .lugares {
   display: flex;
   text-align: center;
@@ -198,6 +218,13 @@ footer {
 
 .lista-ordenada {
   margin-left: 20px; }
+
+.row {
+  display: flex; }
+  .row .column {
+    flex: 33.33%;
+    padding: 5px;
+    width: 100%; }
 
 .color-acento {
   color: #EC058E; }
@@ -221,6 +248,19 @@ footer {
 #fondoform {
   background-image: url(../img/homeoffice.jpg); }
 
+.container {
+  max-width: 1200px;
+  margin: auto; }
+  .container .row {
+    display: flex; }
+
+.btn-primary {
+  --bs-btn-bg: #EC058E;
+  --bs-btn-border-color: #1f0115;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: black;
+  --bs-btn-hover-border-color: #ec058e; }
+
 .color-acento {
   color: #EC058E; }
 
@@ -240,17 +280,16 @@ footer {
 #hero h1 {
   font-size: 3.5em; }
 
+#hero .btn {
+  color: white;
+  background-color: #EC058E; }
+
 #vida-millenial .container-millenial {
   text-align: center;
   padding: 200px 12px; }
 
 #vida-millenial h2 {
   font-size: 3em; }
-
-.actividades {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%; }
 
 #actividades {
   display: flex;
@@ -264,7 +303,8 @@ footer {
 
 #actividades h2 {
   margin-top: 0;
-  font-size: 3em; }
+  font-size: 3em;
+  text-align: center; }
 
 #actividades p {
   display: none; }
@@ -279,6 +319,15 @@ footer {
   padding: 50px;
   margin: 20px;
   border-radius: 15px; }
+  .actividades .cartas .btn {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #EC058E;
+    margin-top: 12%; }
 
 .actividades .cartas:first-child {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/food.jpg); }
@@ -289,10 +338,24 @@ footer {
 .actividades .cartas:nth-child(3) {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/yoga.jpg); }
 
-#extras li {
-  margin: 15px 0px;
-  font-weight: bold;
-  list-style: none; }
+#extras {
+  display: flex;
+  align-items: flex-end;
+  max-width: 1400px;
+  margin: auto;
+  background-image: url(../img/millenialwoman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px; }
+  #extras li {
+    margin: 15px 0px;
+    font-weight: bold;
+    font-size: 1em;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 #tutorias {
   display: flex;
@@ -300,18 +363,26 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #1e1e1e;
   color: white;
-  height: 50vh; }
-
-#tutorias h2 {
-  font-size: 5vh; }
-
-#tutorias button {
-  font-size: 3vh; }
+  height: 30vh; }
+  #tutorias .btn {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #EC058E;
+    margin-top: 12%; }
+  #tutorias h2 {
+    font-size: 4vh;
+    color: #000; }
 
 .color-acento {
   color: #EC058E; }
+
+#fondoViajes {
+  background-image: url(../img/fondopastel.jpg); }
 
 .cardsv {
   display: flex;
@@ -336,7 +407,7 @@ footer {
         color: #000000;
         font-size: 2.4rem; }
       .cardsv .box .box__info .box__subtitle {
-        color: #FFFFFF;
+        color: #EC058E;
         font-size: 1.4rem; }
       .cardsv .box .box__info .box__text {
         color: #403F4C;
@@ -355,25 +426,25 @@ footer {
   grid-gap: 10px; }
   .gallery-container .galleryItem {
     position: relative; }
-    .gallery-container .galleryItem .galleryItem:nth-child(4) {
+    .gallery-container .galleryItem:nth-child(4) {
       grid-column-start: span 2; }
-    .gallery-container .galleryItem .galleryItem:nth-child(5) {
+    .gallery-container .galleryItem:nth-child(5) {
       grid-row-start: span 2; }
-    .gallery-container .galleryItem .galleryItem:nth-child(5) {
+    .gallery-container .galleryItem:nth-child(5) {
       grid-row-start: span 2; }
-    .gallery-container .galleryItem .galleryItem:nth-child(8) {
+    .gallery-container .galleryItem:nth-child(8) {
       grid-column-start: span 2; }
-    .gallery-container .galleryItem .galleryItem:nth-child(7) {
+    .gallery-container .galleryItem:nth-child(7) {
       grid-row-start: span 3; }
-    .gallery-container .galleryItem .galleryItem:nth-child(3) {
+    .gallery-container .galleryItem:nth-child(3) {
       grid-row-start: span 2; }
-    .gallery-container .galleryItem .galleryItem:nth-child(9) {
+    .gallery-container .galleryItem:nth-child(9) {
       grid-row-start: span 2; }
-    .gallery-container .galleryItem .galleryItem:nth-child(6) {
+    .gallery-container .galleryItem:nth-child(6) {
       grid-row-start: span 2; }
-    .gallery-container .galleryItem .galleryItem:nth-child(10) {
+    .gallery-container .galleryItem:nth-child(10) {
       grid-row-start: span 2; }
-    .gallery-container .galleryItem .galleryItem:nth-child(6) {
+    .gallery-container .galleryItem:nth-child(6) {
       grid-column-start: span 2; }
     .gallery-container .galleryItem .galleryImg {
       width: 100%;
@@ -412,7 +483,6 @@ footer {
   background-size: cover;
   background-position: center center; }
   #hero h1 {
-    font-size: 5em;
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-weight: 400;
@@ -432,9 +502,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*display: flex;
-    align-items: center;
-    justify-content: center;*/
   margin: 20px; }
 
 #vida-millenial .container-home {

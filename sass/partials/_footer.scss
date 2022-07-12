@@ -3,6 +3,7 @@ footer{
     color: #fff;
     text-align: center;
     padding: 40px 0;
+  
     
 
     .btn{
@@ -11,26 +12,11 @@ footer{
         font-size: 18px;
         margin: 5px auto;
         border: none;
+        color: #EC058E
 
     }
 
-    .btn--aceptar{
-        @extend .btn;
-        color: #fff;
-        background-color: #EC058E;
-        &:hover {
-            background-color:  #a5158dfd;
-
+    .icon{
+        text-decoration: none;
         }
-    }
-
-    .btn--cancelar{
-        @extend .btn;
-        color: #fff;
-        background-color: #b1a9ae;
-        &:hover {
-            background-color: #85818379;
-
-        }
-    }
 }

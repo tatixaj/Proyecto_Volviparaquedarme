@@ -1,3 +1,4 @@
+
 @media (min-width: 720px){
     #hero h1{
         font-size: 5em;
@@ -8,7 +9,7 @@
         justify-content: space-evenly;
     }
 
-    #vida-millenial .container-home{
+    #vida-millenial .container-home {
         display: flex;
         justify-content: space-evenly;
     }
@@ -118,12 +119,12 @@
         }
     
 
-    #extras{
-        background-image: url(../img/millenialwoman.jpg);
-        background-repeat: no-repeat;
-        background-size: 600px 400px;
-        background-position: calc(100vw - 700px) 120px;
-    }
+     #extras{
+    background-image: url(../img/millenialwoman.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    background-position: calc(100vw - 700px) 120px;
+     }
 
     #extras .container-millenial{
         text-align: initial;
@@ -177,4 +178,42 @@
     .titulo-inicio {
         padding-top: 5rem;
     }
+
 }
+
+ @media screen and (max-width: 600px) {
+    .img-containerhome{
+        display: none;
+
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #vida-millenial {
+
+        .container-home{
+
+            .texto-vida {
+
+                font-size: 10px;
+                text-align: center; 
+                
+                p{
+                    text-align: center; 
+                    
+                }
+            }
+        }  
+    }
+    #about-us{
+        .container-millenial{
+            .subtitulo{
+                font-size: 25px;
+                text-align: center; 
+            }
+        }
+    }
+    
+}
+
